@@ -250,7 +250,9 @@ footer a{
     .container{
         width: 100%;
     }
-
+    .col-3{
+        width: 100%;
+    }
 }
 
 
@@ -258,9 +260,7 @@ footer a{
 /* ------------ Mobile Styles ------------- */
 
 @media screen and (max-width: 450px) {
-    .col-3{
-        width: 100%;
-    }
+    
     .container{
         width: 100%;
     }
@@ -284,7 +284,9 @@ footer a{
     header nav a{
         color:#7EA95E;
     }
-
+    .homeFeature h2, .pageFeature h2{
+        font-size: 7em;
+    }
 
     /* -------- home ---------- */
     .homeFeature h2{

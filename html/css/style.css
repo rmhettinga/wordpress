@@ -1,0 +1,303 @@
+/* ------ Universal -----*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    color: #777;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+h1{
+    font-size: 2em;
+    margin:3% 0;
+}
+
+p{
+    line-height: 1.7em;
+    padding: 0 0 10px 0;
+}
+
+a{
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+a:hover{
+    color: #eaaea9;
+}
+.contain h2{
+    padding: 1em 0;
+}
+.banner{
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contain{
+    padding: 0 5%;
+}
+
+.contain.content{
+    padding: 5% 5%;
+}
+
+.col-3{
+    width: 31%;
+    margin:1%;
+    display: inline-block;
+    vertical-align: top;
+}
+.col-3.first{
+    margin-left:0%;
+}
+
+.container{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+.container.full{
+    width: 100%;
+}
+
+.line{
+    width: 100%;
+    height: 10px;
+    background-color: #efefef;
+    margin: 3% 0;
+}
+
+
+/* ---------- Header ----------- */
+
+header{
+    background-color: #efefef;
+}
+
+header h1, header nav{
+    display: inline-block;
+}
+
+header .logo{
+    width: 49%;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+header nav{
+    width: 50%;
+    text-align: right;
+}
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+}
+header nav li{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding-left: 5%;
+    vertical-align: middle;
+
+}
+
+header nav a{
+    color: #777;
+}
+
+header nav li.current{
+    color: #eaaea9;
+}
+
+/* -------- Sidebar ------- */
+#sidebar{
+    width: 24%;
+    margin-left: 5%;
+    display: inline-block;
+    border-bottom: #eaaea9 dashed 3px;
+    text-align: center;
+}
+
+#sidebar img{
+    width: 100%;
+    border-radius: 50%;
+    margin: -10% 0 -17% 0;
+    max-width: 220px;
+}
+
+/* ---------- Footer ------------ */
+
+footer{
+    background: #efefef;
+    padding: 5% 0;
+}
+
+footer .col-3{
+    border-top: #e7e7e7 solid 5px;
+    padding: 3% 0;
+}
+
+footer h2{
+    letter-spacing: .2em;
+    margin-bottom: 10%;
+    color:#7EA95E;
+}
+
+footer a{
+    padding: 5px;
+    color:#7EA95E;
+}
+
+
+
+
+
+/* -------- Home ---------*/
+
+.homeFeature{
+    background-image: url('../images/palm.jpg');
+    padding: 15% 0;
+    text-align: center;
+}
+
+.homeFeature h2{
+    text-align: center;
+    font-size: 10em;
+    text-transform: uppercase;
+    line-height: .8em;
+    color: #eaaea9;
+    font-weight: 100;
+}
+
+
+
+/* ------------ Universal Page styles --------- */
+.pageFeature{
+    padding: 10% 0;
+}
+.pageFeature h2{
+    text-align: center;
+    font-size: 10em;
+    text-transform: uppercase;
+    line-height: .8em;
+    color: #eaaea9;
+    font-weight: 100;
+}
+
+
+/* --------- About ------------ */
+
+.pageFeature.about{
+    background-image: url('../images/lemons.jpg');
+}
+
+.about1, .about2, .about3 {
+    display: inline-block;
+    text-align: center;
+}
+.aboutIcon{
+    text-align: center;
+
+}
+.aboutIcon i{
+    padding: 15%;
+    border-radius: 50%;
+    color: white;
+    background-image: url('../images/waterc-bg.jpg');
+    background-attachment: fixed;
+}
+.about1 i{
+    background-position: left;
+}
+.about2 i{
+    background-position: center;
+}
+.about3 i{
+    background-position: right;
+}
+
+/* --------- Blog ---------------- */
+.pageFeature.blog{
+    background-image: url('../images/kitesurf.jpg');
+}
+
+/* --------- Contact ------------ */
+
+.pageFeature.contact{
+    background-image: url('../images/bird.jpg');
+}
+
+
+
+/* ----------------- Tablet Styles -------------- */
+@media screen and (max-width: 700px) {
+    #sidebar{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .col-3{
+        width: 100%;
+    }
+}
+
+
+
+/* ------------ Mobile Styles ------------- */
+
+@media screen and (max-width: 450px) {
+
+    .container{
+        width: 100%;
+    }
+    #sidebar{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* -------- header --------- */
+    header .logo{
+        width: 100%;
+        font-size: 1.6em;
+        text-align: center;
+    }
+    header nav{
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        border-top: 2px solid #fff;
+    }
+    header nav a{
+        color:#7EA95E;
+    }
+    .homeFeature h2, .pageFeature h2{
+        font-size: 7em;
+    }
+
+    /* -------- home ---------- */
+    .homeFeature h2{
+
+    }
+}
